@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Job Details for Inclusive Jobs Platform"
+    />
+    <title>Job Details</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="job1.css" />
+  </head>
+  <body>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#jobs">Jobs</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#assisstanceprograms">Assistance Programs</a>
+    </nav>
+
+    <!-- Job Details Section -->
+    <section class="job-details" id="job-details">
+      <h1 id="job-title">Loading...</h1>
+      <p id="job-info"><strong>Job Description:</strong> Loading...</p>
+
+      <h2>Responsibilities:</h2>
+      <ul id="job-responsibilities">
+        <li>Loading...</li>
+      </ul>
+
+      <h2>Requirements:</h2>
+      <ul id="job-requirements">
+        <li>Loading...</li>
+      </ul>
+
+      <!-- Resume Upload Section -->
+      <h2>Apply Now</h2>
+      <form
+        id="resume-form"
+        action="#"
+        onsubmit="handleSubmit(event)"
+      >
+        <label for="resume">Upload Your Resume:</label>
+        <input
+          type="file"
+          id="resume"
+          name="resume"
+          accept=".pdf, .doc, .docx"
+          required
+        />
+        <button type="submit">Submit</button>
+      </form>
+      <p id="upload-message"></p>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Inclusive Jobs Platform. All rights reserved.</p>
+    </footer>
+    <script src="job1.js"></script>
+
+  </body>
+</html>

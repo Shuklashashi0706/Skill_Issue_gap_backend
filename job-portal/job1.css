@@ -1,0 +1,112 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background: #003F7F;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Job Details Section */
+.job-details {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.job-details h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #00509E;
+}
+
+.job-details h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: #003F7F;
+}
+
+.job-details p, .job-details ul {
+    margin-bottom: 1rem;
+}
+
+.job-details ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.job-details ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Resume Upload Form */
+form {
+    margin-top: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+form button {
+    background: #00509E;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background: #003F7F;
+}
+
+/* Upload Message */
+#upload-message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #00509E;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}

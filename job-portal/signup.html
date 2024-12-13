@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <input type="text" id="signupUsername" placeholder="Username" required>
+            <input type="password" id="signupPassword" placeholder="Password" required>
+            <input type="number" id="signupAge" placeholder="Age" required>
+            <select id="signupGender" required>
+                <option value="" disabled selected>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="text" id="signupSkillset" placeholder="Skillset" required>
+            <label>
+                <input type="checkbox" id="signupDisabled"> Are you disabled?
+            </label>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const user = {
+                username: document.getElementById('signupUsername').value,
+                password: document.getElementById('signupPassword').value,
+                age: document.getElementById('signupAge').value,
+                gender: document.getElementById('signupGender').value,
+                skillset: document.getElementById('signupSkillset').value,
+                disabled: document.getElementById('signupDisabled').checked
+            };
+
+            localStorage.setItem(user.username, JSON.stringify(user));
+            alert('Sign up successful! Please log in.');
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>
