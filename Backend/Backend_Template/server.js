@@ -1,7 +1,8 @@
 const express = require("express");
 const connectDB = require("./data/connectDB.js");
 const cookieParser = require("cookie-parser");
-const router = require("./routes/user.js");
+const router = require("./routes/job.js");
+const resumeRouter = require("./routes/resumeRouter.js")
 const dotenv = require("dotenv");
 const cors = require("cors");
 const app = express();
@@ -17,6 +18,7 @@ app.use(express.json({ urlencoded: true }));
 app.use(cors("0.0.0.0", { credentials: true, allowedHeaders: true }));
 
 app.use("/api/v1/job", router);
+app.use("/api/v1/resume", resumeRouter);
 
 app.get("/", (req, res) => {
   res.send("Hi");

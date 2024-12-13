@@ -34,7 +34,7 @@ def get_skill_gap_assessment():
         {
           "role": "model",
           "parts": [
-            "Okay, let's break down how a skill gap assessment system would work...",  # Previous long response truncated for brevity
+            "Okay, let's break down how a skill gap assessment system would work...",
           ],
         },
       ]
